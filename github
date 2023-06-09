@@ -1,0 +1,28 @@
+ package sellinium1;
+ 
+	//import org.openqa.selenium.By;
+	import org.openqa.selenium.WebDriver;
+	//import org.openqa.selenium.WebElement;
+	import org.openqa.selenium.chrome.ChromeDriver;
+	//import org.testng.Assert;
+	//import org.testng.annotations.Test;
+ 
+
+
+	public class github {
+
+		public static void main(String[] args) {
+			
+			
+			System.out.println("hai");
+			System.setProperty("webdriver.chrome.driver","C:\\selenium jar\\chromedriver_win32\\chromedriver.exe");
+			WebDriver driver = new ChromeDriver();
+			//driver.get("https://www.google.com/");
+		 
+							
+			driver.get("https://github.com");
+		     driver.quit();
+
+		}
+
+}
