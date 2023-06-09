@@ -1,0 +1,63 @@
+package Morzilla1;
+
+import org.openqa.selenium.By;
+
+import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.WebElement;
+
+//import org.openqa.selenium.chrome.ChromeDriver;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class FB1{
+
+	public static void main(String[] args) {
+
+		
+
+		
+
+		System.out.println("hai");
+
+		System.setProperty("webdriver.Firefox.driver","C:\\selenium\\firefoxdriver_64\\geckodriver.exe");
+
+		WebDriver driver = new FirefoxDriver();
+
+		driver.manage().window().maximize();
+
+						
+
+		driver.get("https://www.facebook.com/");
+
+		WebElement username=driver.findElement(By.id("email"));
+
+		
+
+		System.out.println(username);
+
+	
+
+		WebElement password=driver.findElement(By.id("pass"));
+
+		System.out.println(password);
+
+		WebElement login=driver.findElement(By.name("login"));
+
+		
+
+		System.out.println(login);
+
+		username.sendKeys("mailid");
+
+		
+
+		
+
+		password.sendKeys("password");
+
+		login.click();
+
+	}
+
+} 
